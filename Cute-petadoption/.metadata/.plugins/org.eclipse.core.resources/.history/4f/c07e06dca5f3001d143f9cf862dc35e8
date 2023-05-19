@@ -1,0 +1,44 @@
+package com.pute.Dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.PreparedStatement;
+import com.pute.DButils.DBConn;
+import com.pute.Entity.team_pute;
+
+public class Team_puteZSG {
+	//获取数据库连接
+	Connection conn=null;
+	//获取sql初始化对象
+	PreparedStatement pst=null;
+	//集合对象
+	 ResultSet rs=null;
+	
+	 
+	 //查询单个团队宠物信息
+	public team_pute update(int id) throws SQLException, Exception {
+		String sql="select * team_pute where teamid=?";
+		conn=DBConn.getConn();
+		team_pute p=new team_pute();
+		rs=puteDao.setSql(sql,id).executeQuery();
+		while (rs.next()) {
+			p.setTeamid(rs.getInt("Teamid"));
+			p.setTeam_name(rs.getString("Team_name"));
+			p.setTeam_sex(rs.getString("Team_sex"));
+			p.setTeam_age(rs.getInt("Team_age"));
+			p.setTeam_type(rs.getString("Team_type"));
+			p.setTeam_text(rs.getString("Team_text"));
+			p.setTeam_address(rs.getString("Team_address"));
+			p.setTeam_imgw(rs.getString("Team_img"));
+			p.setUser_id(rs.getInt("User_id"));
+			p.setTeam_id(rs.getInt("team_id"));
+			p.setTeam_ski(rs.getInt("Team_ski"));
+			p.setTeam_date(rs.getString("Team_date"));
+			p.setTeam_iux(rs.getInt("team_iux"));
+		}
+		return p;
+	}  
+	
+}

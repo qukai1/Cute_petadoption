@@ -1,0 +1,76 @@
+package com.pute.servlet;
+
+import java.io.IOException;
+import java.util.Iterator;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.websocket.Session;
+
+import com.pute.Dao.puteDao;
+import com.pute.Entity.User;
+
+//用户登录的servlet
+public class login extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public login() {
+       
+    }
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//初始化声明session对象
+		HttpSession session=request.getSession();
+		//设置字符编码格式
+		request.setCharacterEncoding("utf-8");
+		//获取用户登录参数
+		String name=request.getParameter("login-name");
+		String pwd=request.getParameter("login-pwd");
+		System.out.println(name+pwd);
+		//进行初始化参数
+		boolean login=false;
+		int status=0;
+		int id=0;
+		//登录用户头像
+		String userimg="";
+		//进行调用数据库获取用户信息֤
+		try {
+			for (User s:puteDao.querUser()) {
+				if (s.getName().equals(name)&&s.getPwd().equals(pwd)) {
+					login=true; 	
+					status=s.getUserID();
+					id=s.getId();
+					break;
+				}
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if (login) {
+			if (status==2) {
+				//如果用户等于2则表示管理员登录
+				session.setAttribute("pute-name",name);
+				//则跳转后台页面
+				System.out.println("已登录的用户的id是"+id);
+				session.setAttribute("id",id);
+				response.sendRedirect("Admin_team");
+			} else {
+				//如果用户等于1则表示普通用户登录完成返回首页传递session
+				session.setAttribute("pute-name",name);
+				System.out.println("已登录的用户的id是"+id);
+				session.setAttribute("id",id);
+				response.sendRedirect("ShowAll_index");
+			}
+		} else {
+			request.setAttribute("error","账号或者密码错误，请检查！");
+			request.getRequestDispatcher("loginandregistration.jsp").forward(request, response);
+		
+			
+		}
+	}
+
+}

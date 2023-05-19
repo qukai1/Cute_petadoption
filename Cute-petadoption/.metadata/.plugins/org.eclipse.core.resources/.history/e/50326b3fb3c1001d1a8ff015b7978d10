@@ -1,0 +1,104 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>宠物领养平台</title>
+		<link >
+	</head>
+	<body>
+		<div id="box">
+			<div id="diyihang">
+				<div class="comt"><P class="p_text">欢迎来到易领平台！</P>
+				<ul class="logo_user">
+					<li class="li_hover">
+						<a href="http://"></a>
+					</li>
+				</ul> 
+				<span class="sp">欢迎<a href="#"></a>登录成功！<a href="#">我的宠物信息！</a></span>
+				</div>
+			</div>
+			<div id="dierhang">
+				<ul class="meve_index">
+					<li>猫类动物</li>
+					<li>犬类动物</li>
+					<li>鸟类动物</li>
+					<li>未领养动物</li>
+					<li>发布领养</li>
+					<li>查看所有类型</li>
+				</ul>
+			<p class="shou_input"><input type="text" name="suosi"  placeholder="请您输入...." class="text_input"/><input type="button" name=""  value="搜索" class="btn"/></p>
+			</div>
+			<div id="disanhang">
+				
+			</div>
+			<div id="disihang">
+				<div class="buo_top">
+						<div id="disihang1">
+							<dl>
+								<dt>热门链接</dt>
+								<dd><a href="#">比特犬</a></dd>
+								<dd><a href="#">泰迪</a></dd>
+								<dd><a href="#">犬类</a></dd>
+								<dd><a href="#">猫类</a></dd>
+								<dd><a href="#">体验中心</a></dd>
+								<dd><a href="#">常见问题</a></dd>
+							</dl>
+						</div>
+						<div id="disihang2">
+							<dl>
+								<dt>自由选择</dt>
+								<dd><a href="#">宠物百科</a></dd>
+								<dd><a href="#">领养猫咪</a></dd>
+								<dd><a href="#">领养狗狗</a></dd>
+								<dd><a href="#">寄养宠物</a></dd>
+								<dd><a href="#">发布信息</a></dd>
+								<dd><a href="#">服务保障</a></dd>
+							</dl>
+						</div>
+						<div id="disihang3">
+							<dl>
+								<dt>服务支持</dt>
+								<dd><a href="#">服务首页</a></dd>
+								<dd><a href="#">服务网点查询</a></dd>
+								<dd><a href="#">联系客服</a></dd>
+								<dd><a href="#">服务政策</a></dd>
+								<dd><a href="#">预约地点</a></dd>
+								<dd><a href="#">宠物百科</a></dd>
+							</dl>
+						</div>
+						<div id="disihang4">
+							<dl>
+								<dt>宠物社区社区</dt>
+								<dd><a href="#">社区首页</a></dd>
+								<dd><a href="#">摄影专区</a></dd>
+								<dd><a href="#">微博</a></dd>
+								<dd><a href="#">贴吧</a></dd>
+								<dd><a href="#">兴趣部落</a></dd>
+								
+							</dl>
+						</div>
+						<div id="disihang5">
+							<dl>
+								<dt>关于起航</dt>
+								<dd><a href="#">起航简介</a></dd>
+								<dd><a href="#">工作机会</a></dd>
+								<dd><a href="#">新闻咨询</a></dd>
+								<dd><a href="#">启动平台</a></dd>
+								<dd><a href="#">开发者平台</a></dd>
+								
+							</dl>
+						</div>
+						<div id="disihang6">
+							
+						</div>
+					</div>
+				<div class="buo_but">
+					<hr style="width:90%;margin: 0px auto;color: white;size:0.5px;" />
+					<h4 class="div_copy">&copy;2010-2023京沪IP <a href="#">关于我们</a><a href="#">加入我们</a></h4>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

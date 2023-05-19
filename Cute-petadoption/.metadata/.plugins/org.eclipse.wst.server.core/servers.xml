@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Apache Tomcat v8.5 (4) at localhost-config" deployDir="D:\服务器\apache-tomcat-8.5.32\webapps" hostname="localhost" id="Apache Tomcat v8.5 (4) at localhost" name="Apache Tomcat v8.5 (4) at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="false" timestamp="8">
+    <list key="modules" value0="Cute-petadoption::org.eclipse.jst.jee.server:Cute-petadoption::jst.web::3.1"/>
+  </server>
+</servers>

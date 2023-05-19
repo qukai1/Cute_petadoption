@@ -1,0 +1,10 @@
+	<Context path="/file" docBase="F:\Ctea_pute\Cute-petadoption\Cute-petadoption\src\main\webapp\img\webimg" debug="0" reloadable="true"/>
+今天在业务层遇到问题，多传一个参数可以省很多事，但忘记了语法，参数之间用了逗号（大错特错）。
+正解：
+
+？参数名1 = 参数值1 & 参数名2 = 参数值2
+只需一个 “ & ”
+补充：
+今天又用到这个只是，项目中遇bug，找了好久url参数显示正常，但到了Action变成了null，后来找到原因：
+错误代码
+惨痛教训啊，小伙伴一定记得不要手贱加空格啥的。。。

@@ -1,0 +1,44 @@
+package com.pute.servlet.teamAdmin;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.pute.Dao.Team_puteZSG;
+import com.pute.Entity.pute_team;
+
+/**
+ * Servlet implementation class UpdatePute_team
+ */
+@WebServlet("/UpdatePute_team")
+public class UpdatePute_team extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		pute_team t=new pute_team();
+		t.setTeam_id(Integer.parseInt(request.getParameter("")));
+		t.setTeam_text(request.getParameter("team_text"))
+		t.setTeam_name(request.getParameter("team_name"));
+		t.setTeam_address(request.getParameter(""));
+		t.setTeam_phone(request.getParameter(""));
+		try {
+			if (Team_puteZSG.UpdatePute_team(t)) {
+				System.out.println("修改成功");
+			} else {
+				System.out.println("修改失败");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		response.sendRedirect("Team_puteAdmin");
+	}
+
+}

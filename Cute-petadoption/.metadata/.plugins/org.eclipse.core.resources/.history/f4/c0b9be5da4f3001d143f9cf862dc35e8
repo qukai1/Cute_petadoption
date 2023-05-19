@@ -1,0 +1,22 @@
+package com.pute.Dao;
+
+import java.sql.ResultSet;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.PreparedStatement;
+import com.pute.Entity.team_pute;
+
+public class Team_puteZSG {
+	//获取数据库连接
+	static Connection conn=null;
+	//获取sql初始化对象
+	static PreparedStatement pst=null;
+	//集合对象
+	static ResultSet rs=null;
+	
+	public team_pute team_pute update(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}  
+	
+}

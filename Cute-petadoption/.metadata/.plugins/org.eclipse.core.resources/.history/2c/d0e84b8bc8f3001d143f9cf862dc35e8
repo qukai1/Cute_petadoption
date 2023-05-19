@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="UpdatePute_team" method="post">
+		<p>团队名称:<input type="text" name="team_name" id="" value="${p.team_name}"/></p>
+		<p>团队备注:<input type="text" name="team_text" id="" value="${p.team_text}"/></p>
+		<p>团队联系方式:<input type="text" name="team_phone" id="" value="${p.team_phone}"/></p>
+		<p>团队所在地区:<input type="text" name="team_address" id="" value="${p.team_address}"/></p>
+		<p style="display: none;"><input type="text" value="${p.team_id}"/></p>
+		<p><input type="submit" value="确认修改!"></p>
+	</form>
+</body>
+</html>

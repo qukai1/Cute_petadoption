@@ -1,0 +1,5 @@
+package com.pute.Dao.AdminDao;
+
+public class AdminDaoInfo {
+
+}

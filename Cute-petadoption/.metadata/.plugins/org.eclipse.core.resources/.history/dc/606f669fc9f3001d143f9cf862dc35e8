@@ -1,0 +1,351 @@
+
+* {
+							margin: 0px;
+							padding: 0px;
+							text-decoration: none;
+						}
+						
+						/* 鏁翠綋鐩掑瓙璁剧疆 */
+						#box {
+							width: 100%;
+							
+						}
+						/* 绗竴鏍忓唴瀹� */
+						#diyihang {
+							position: fixed;
+							top: 0px;
+							width: 100%;
+							height: 30px;
+							background-color: #f0f7ff;
+							border-bottom: 1px solid #ccd2d8;
+							overflow: hidden;
+						}
+						/* 绗簩鏍忓唴瀹� */
+						#dierhang {
+							/*   background-color:#B3D8FF; */
+							margin:0px auto;
+							margin-bottom:10px;
+							width:80%;
+							height:70px;
+						}
+						/* 鎼滅储鏍� */
+						.shou_input {
+							width: 41%;
+							height: 40px;
+							float: left;
+							margin-left:8%;
+							margin-top: 13px;
+						}
+						.text_input {
+							padding-left:10px;
+							border: 2px solid red;
+							outline: none; /* 涓嶆樉绀鸿疆寤撶嚎 */
+							width: 55%;
+							height:97%;
+							border-radius: 5px 0px 0px 5px;
+						}
+						/* 鎼滅储鏍忔寜閽� */
+						.btn {
+							width: 20%;
+							height: 100%;
+							cursor: pointer;
+						}
+						
+						
+						/*涓汉logo璁剧疆 */
+						.logo_img {
+							width: 15%;
+							height:100%;
+							float: left;
+						}
+						p.logo_img img{
+							width:100%;
+							height:100%;
+						}
+						/* 鐚挭鎵�灞炰釜浜虹殑淇℃伅 */
+						div.user_init{
+							float: left;
+							width:30%;
+							height:100%;
+						}
+						/* 鑿滃崟鏍� */
+						div.bean_even{
+							width:100%;
+							height:30px;
+							background-color: #ff0000;
+						}
+						div.bean_even ul{
+							width:40%;
+							height:100%;
+							margin-left:10%;
+						}
+						div.bean_even ul li{
+							float: left;
+							list-style: none;
+							width:26%;
+							height:100%;
+							text-align: center;
+							line-height:30px;
+							color: white;
+							font-size:13px;
+							cursor: pointer;
+						}
+						/* 璇︾粏鍐呭 */
+						div.body_iutem{
+							width: 80%;
+							overflow: hidden;
+							margin:0px auto;
+						}
+						/* 璇︾粏淇℃伅鍥剧墖鎻忚堪 */
+						div.body_top,div.body_center,div.body_buttom{
+							margin-top:20px;
+							width:100%;
+							overflow: hidden;
+						}
+						dl.dlist{
+							background-color:white;
+							width:100%;
+							height:90%;
+						}
+						dl.dlist dt{
+							float:left;
+							width:60%;
+							height:100%;
+						}
+						dl.dlist dt img{
+							width:100%;
+							height:100%;
+						}
+						dl.dlist dd{
+							width:39%;
+							height:100%;
+							float:left;
+						}
+						dl.dlist dd h1{
+							text-align: center;
+							margin-top:30px;
+						}
+						dl.dlist dd table{
+							margin-left:8%;
+							width:90%;
+							height:60%;
+							margin-bottom:20px;
+						}
+						/* 鎸夐挳鏍峰紡 */
+						input.but{
+							width: 110px;
+							line-height: 38px;
+							text-align: center;
+							font-weight: bold;
+							color: #fff;
+							text-shadow:1px 1px 1px #333;
+							border-radius: 5px;
+							margin:0 20px 20px 0;
+							overflow: hidden;
+							border:1px solid #64c878;
+							box-shadow: 0 1px 2px #b9ecc4 inset,0 -1px 0 #6c9f76 inset,0 -2px 3px #b9ecc4 inset;
+							background: -webkit-linear-gradient(top,#90dfa2,#84d494);
+							background: -moz-linear-gradient(top,#90dfa2,#84d494);
+							background: linear-gradient(top,#90dfa2,#84d494);
+						}
+						input.but:hover{
+							cursor: pointer;
+							border:1px solid #ff5500;
+							box-shadow: 0 1px 2px #ff5500 inset,0 -1px 0 #ff5500 inset,0 -2px 3px #ff5500 inset;
+							background: -webkit-linear-gradient(top,#ff5500,#ff5500);
+							background: -moz-linear-gradient(top,#ff5500,#ff5500);
+							background: linear-gradient(top,#ff5500,#ff5500);
+						}
+						textarea.text{
+							width:100%;
+							height:70%;
+						}
+						div.body_center,div.body_buttom{
+							display: none;
+						}
+						div.body_buttom{
+						background-color: white;}
+						#disihang {
+							width: 100%;
+							height: 400px;
+							background-color: #303133;
+						}
+						div.buo_top {
+							width: 100%;
+							height: 250px;
+						}
+						div.buo_but {
+							width: 100%;
+							height: 150px;
+						}
+						/* 鐗堟潈鍒嗘爮璁剧疆 */
+						#disanhang1,
+						#disanhang2,
+						#disanhang3,
+						#disanhang4 {
+							float: left;
+							width: 20%;
+							height: 300px;
+							background-color: #FFA500;
+							margin-top: 30px;
+							margin-left: 80px;
+						}
+						#disihang1,
+						#disihang2,
+						#disihang3,
+						#disihang4,
+						#disihang5 {
+							float: left;
+							width: 130px;
+							height: 200px;
+							margin-top: 10px;
+						}
+						#disihang1 {
+							margin-left: 80px;
+						}
+						
+						#disihang2 {
+							margin-left: 50px;
+						}
+						
+						#disihang3 {
+							margin-left: 50px;
+						}
+						
+						#disihang4,
+						#disihang5 {
+							margin-left: 50px;
+						}
+						dt {
+							font-size: 20px;
+							color: white;
+							margin-bottom: 10px;
+						}
+						
+						dl.copy_dl{
+							margin-top: 15px;
+						}
+						
+						dl.copy_dl a {
+							text-decoration: none;
+							font-size: 16px;
+							color: darkgrey;
+						
+						}
+						
+						dl.copy_dl a:hover {
+							color: white;
+						}
+						/* 浜岀淮鐮� */
+						#disihang6 {
+							width: 200px;
+							height: 200px;
+							float: right;
+							margin-top: 20px;
+							margin-right: 140px;
+						}
+						#disihang6 h2 {
+							font-size: 20px;
+							font-weight: bold;
+							text-align: center;
+							color: white;
+						}
+						.weixin_img {
+							width: 100%;
+							height: 85%;
+							background-image: url("../img/联系我们.jpg");
+							background-size: 100% 100%;
+							background-repeat: no-repeat;
+						}
+							/* 澹版槑鐗堟潈 */
+						.div_copy {
+							text-align: center;
+							margin-top: 50px;
+							color: white;
+						}
+						
+						.div_copy a{
+							margin-left: 50px;
+							color: white;
+						}
+						li.ite1{
+							background-color:#aa0000;
+							opacity: 0.9;
+						}
+			div.list{
+				width:100%;
+				height:60px;
+				background-color: white;
+			}
+			div.list table{
+				color: #6f7175;
+			}
+			input.che{
+				margin-left:-20px;
+				margin-right:20px;
+			}
+			div.shuju_table{
+				width:100%;
+				background-color: white;
+				margin-top:20px;
+			}
+	div.list div{
+		float:left;
+	}
+	div.list_left{
+		width:40%;
+		height:100%;
+		font-size:14px;
+		color: orangered;
+		line-height:60px;
+		text-align: center;
+	}
+	div.list_right{
+		width:79%;
+		height:100%;
+		border-left:2px solid red;
+	}
+	/* 鎸夐挳鏍峰紡 */
+	input.buti{
+		width: 110px;
+		line-height: 38px;
+		text-align: center;
+		font-weight: bold;
+		color: #fff;
+		text-shadow:1px 1px 1px #333;
+		border-radius: 5px;
+		margin:0 20px 20px 0;
+		overflow: hidden;
+		border:1px solid #ff5500;
+		box-shadow: 0 1px 2px #ff5500 inset,0 -1px 0 #ff5500 inset,0 -2px 3px #ff5500 inset;
+		background: -webkit-linear-gradient(top,#ff5500,#ff5500);
+		background: -moz-linear-gradient(top,#ff5500,#ff5500);
+		background: linear-gradient(top,#ff5500,#ff5500);
+		cursor: pointer;
+		margin-top:10px;
+	}
+table.el{
+			width:100%;
+			line-height:50px;
+			text-align:center;
+			border:1px solid #dcdde1;
+			margin-bottom:1px solid white;
+		}
+table.el tr td{
+			border-bottom:1px solid #dcdde1;
+		}
+		
+input.lists{
+	position:relative;
+	top:10px;
+}
+input.ulist{
+margin-left:15px; 
+}
+dl.dlist dt img{
+	margin-top:15px;
+}
+dl.dlist dd table{
+   width:90%;
+   height:300px;
+}

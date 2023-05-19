@@ -1,0 +1,11 @@
+package com.pute.Entity;
+//团队活动信息实体表
+public class pute_team_huodong {
+	private int huodong_id;
+	private String huodong_name;
+	private String state;
+	private String eng;
+	private String houdong_status;
+	private String houdong_baifen;
+	private int pute_team_id;
+}
